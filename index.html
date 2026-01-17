@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Havan - Landing Page</title>
 
     <!-- CSS de cada seção de vcs -->
-    <link rel="stylesheet" href="01-barra-navegacao/barra-navegacao.css">
-    <link rel="stylesheet" href="02-banner/banner.css">
-    <link rel="stylesheet" href="03-filtros/filtros.css">
-    <link rel="stylesheet" href="04-ofertas-imperdiveis/ofertas-imperdiveis.css">
-    <link rel="stylesheet" href="05-banner-oferta/banner-oferta.css">
-    <link rel="stylesheet" href="06-descontos-imperdiveis/descontos-imperdiveis.css">
-    <link rel="stylesheet" href="07-recomendados/recomendados.css">
-    <link rel="stylesheet" href="08-nao-perca-vista/nao-perca-vista.css">
-    <link rel="stylesheet" href="09-footer/footer.css">
-    <link rel="stylesheet" href="10-chatbot/chatbot.css">
+    <link rel="stylesheet" href="01 barra-navegacao/barra-navegacao.css">
+    <link rel="stylesheet" href="02 banner/banner.css">
+    <link rel="stylesheet" href="03 filtros/filtros.css">
+    <link rel="stylesheet" href="04 oferta-imperdiveis/oferta-imperdiveis.css">
+    <link rel="stylesheet" href="05 banner oferta/banner-oferta.css">
+    <link rel="stylesheet" href="06 descontos-imperdiveis/descontos-imperdiveis.css">
+    <link rel="stylesheet" href="07 recomendados/recomendados.css">
+    <link rel="stylesheet" href="08 nao-perca-vista/nao-perca-vista.css">
+    <link rel="stylesheet" href="09 footer/footer.css">
+    <link rel="stylesheet" href="10 chatbot/chatbot.css">
 </head>
 
 <body>
@@ -51,9 +52,118 @@
     </section>
 
     <!-- Recomendados -->
-    <section id="recomendados">
-        <!-- Conteúdo dos recomendados -->
+    <section class="recomendados">
+        <h2>Recomendados pra você</h2>
+
+        <div class="layout">
+
+            <!-- FIXO À ESQUERDA -->
+            <div class="fixo">
+                <h3 class="label">VOCÊ VIU ESSE:</h3>
+
+                <div class="card destaque">
+                    <span class="desconto">-47%</span>
+
+                    <img src="./assets/img/07 Recomendados pra você/kit-starlink-mini-internet-via-satelite_1182913.webp"
+                        alt="starlink">
+
+                    <p class="titulo">Kit Starlink Mini Internet via Satélite-Branco</p>
+
+                    <div class="avaliacao">⭐⭐⭐⭐⭐ <span>(133)</span></div>
+
+                    <div class="preco-antigo">R$ 2.199,90</div>
+                    <div class="preco">R$ 1.199,90</div>
+                    <div class="parcelas">10x de R$ 119,98</div>
+                </div>
+            </div>
+
+            <!-- CARROSSEL À DIREITA -->
+            <div class="carrossel-area">
+                <span class="label">VEJA TAMBÉM:</span>
+
+                <button class="seta seta-esquerda">«</button>
+                <button class="seta seta-direita">»</button>
+
+                <div class="carrossel">
+
+                    <div class="card">
+                        <img src="./assets/img/07 Recomendados pra você/roteador-wifi-intelbras-dual-band-5-w5-2100g_922317.webp" alt="roteador">
+                        <p class="titulo">Roteador WiFi Intelbras Dual Band 5 W5 2100G</p>
+                        <div class="avaliacao">⭐⭐⭐⭐⭐ <span>(7)</span></div>
+                        <div class="preco">R$ 299,90</div>
+                        <div class="parcelas">10x de R$ 29,99</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/img/07 Recomendados pra você/roteador-gigabat-wi-force-w5-1200g-intelbras_745089.webp" alt="">
+                        <p class="titulo">Roteador Gigabat Wi-Force W5 1200G Intelbras</p>
+                        <div class="avaliacao">⭐⭐⭐⭐⭐ <span>(3)</span></div>
+                        <div class="preco">R$ 249,90</div>
+                        <div class="parcelas">10x de R$ 24,99</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/img/07 Recomendados pra você/roteador-wi-fi-6-dual-band-ax-1500-intelbras_1079840.webp" alt="">
+                        <p class="titulo">Roteador Wi-Fi 6 Dual Band AX 1500 Intelbras</p>
+                        <div class="avaliacao">⭐⭐⭐⭐⭐ <span>(2)</span></div>
+                        <div class="preco">R$ 349,90</div>
+                        <div class="parcelas">10x de R$ 34,99</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/img/07 Recomendados pra você/extensor-wi-fi-5-dual-band-twibi-force-plug-giga-intelbras_1171753.webp" alt="">
+                        <p class="titulo">Extensor Wi-Fi 5 Dual Band Twibi Force Plug Giga Intelbras</p>
+                        <div class="preco">R$ 499,90</div>
+                        <div class="parcelas">10x de R$ 49,99</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/img/07 Recomendados pra você/repetidor-de-wi-f--wiereless-d-link-mesh-ac750-dap-1530_1001300.webp" alt="">
+                        <p class="titulo">Repetidor de Wi-Fi D-Link Mesh AC750 DAP-1530</p>
+                        <div class="avaliacao">⭐⭐⭐⭐⭐ <span>(1)</span></div>
+                        <div class="preco">R$ 139,90</div>
+                        <div class="parcelas">10x de R$ 13,99</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/img/07 Recomendados pra você/kit-roteador-wi-fi-6-dual-band-twibi-force-ax_1080189.webp" alt="">
+                        <p class="titulo">Kit Roteador Wi-Fi 6 Dual Band Twibi Force AX</p>
+                        <div class="avaliacao">⭐⭐⭐⭐⭐ <span>(5)</span></div>
+                        <div class="preco">R$ 599,90</div>
+                        <div class="parcelas">10x de R$ 59,99</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/img/07 Recomendados pra você/roteador-gigabat-wi-force-w5-1200g-intelbras_745089.webp" alt="">
+                        <p class="titulo">Roteador Gigabat Wi-Force W5 1200G Intelbras</p>
+                        <div class="avaliacao">⭐⭐⭐⭐⭐ <span>(2)</span></div>
+                        <div class="preco">R$ 249,90</div>
+                        <div class="parcelas">10x de R$ 24,99</div>
+                    </div>
+                      <div class="card">
+                        <img src="./assets/img/07 Recomendados pra você/kit-roteador-wi-fi-6-dual-band-twibi-force-ax_1080189.webp" alt="">
+                        <p class="titulo">Kit Roteador Wi-Fi 6 Dual Band Twibi Force AX</p>
+                        <div class="avaliacao">⭐⭐⭐⭐⭐ <span>(5)</span></div>
+                        <div class="preco">R$ 599,90</div>
+                        <div class="parcelas">10x de R$ 59,99</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/img/07 Recomendados pra você/roteador-gigabat-wi-force-w5-1200g-intelbras_745089.webp" alt="">
+                        <p class="titulo">Roteador Gigabat Wi-Force W5 1200G Intelbras</p>
+                        <div class="avaliacao">⭐⭐⭐⭐⭐ <span>(2)</span></div>
+                        <div class="preco">R$ 249,90</div>
+                        <div class="parcelas">10x de R$ 24,99</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
     </section>
+
+
+
 
     <!-- Não Perca à Vista -->
     <section id="nao-perca-vista">
@@ -71,16 +181,17 @@
     </div>
 
     <!-- JS de cada seção de vcs(se necessário) -->
-    <script src="01-barra-navegacao/barra-navegacao.js"></script>
-    <script src="02-banner/banner.js"></script>
-    <script src="03-filtros/filtros.js"></script>
-    <script src="04-ofertas-imperdiveis/ofertas-imperdiveis.js"></script>
-    <script src="05-banner-oferta/banner-oferta.js"></script>
-    <script src="06-descontos-imperdiveis/descontos-imperdiveis.js"></script>
-    <script src="07-recomendados/recomendados.js"></script>
-    <script src="08-nao-perca-vista/nao-perca-vista.js"></script>
-    <script src="09-footer/footer.js"></script>
-    <script src="10-chatbot/chatbot.js"></script>
+    <script src="01 barra-navegacao/barra-navegacao.js"></script>
+    <script src="02 banner/banner.js"></script>
+    <script src="03 filtros/filtros.js"></script>
+    <script src="04 oferta-imperdiveis/oferta-imperdiveis.js"></script>
+    <script src="05 banner oferta/banner-oferta.js"></script>
+    <script src="06 descontos-imperdiveis/descontos-imperdiveis.js"></script>
+    <script src="07 recomendados/recomendados.js"></script>
+    <script src="08 nao-perca-vista/nao-perca-vista.js"></script>
+    <script src="09 footer/footer.js"></script>
+    <script src="10 chatbot/chatbot.js"></script>
 
 </body>
+
 </html>
