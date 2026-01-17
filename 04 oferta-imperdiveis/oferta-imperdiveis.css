@@ -25,17 +25,28 @@
     width: 191.5px;
     border-radius: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
     
 }
 
-.oferta-img-estrela{
-    width: 100px;
-    height: auto;
-
-}
 
 .oferta-img{
    width: 189px;
+   display: block;
+}
+
+.oferta-desconto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    margin: 14px;
+    font-size: 12px;
+    background-color: rgb(203, 224, 204);
+    color: rgb(24, 169, 16);
+    padding: 4px 11px;
+    border-radius: 20px;
+    font-weight: bolder;
 }
 
 #oferta-botao{
@@ -57,6 +68,10 @@
     margin: 0;
     color: rgb(95, 95, 95);
     font-size: 12.3px;
+}
+
+.oferta-avaliacao{
+    font-size: 13px;
 }
 
 
