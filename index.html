@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 	<head>
 		<meta charset="UTF-8" />
@@ -15,8 +15,8 @@
 		<link rel="stylesheet" href="06-descontos-imperdiveis/descontos-imperdiveis.css" />
 		<link rel="stylesheet" href="07-recomendados/recomendados.css" />
 		<link rel="stylesheet" href="08-nao-perca-vista/nao-perca-vista.css" />
-		<link rel="stylesheet" href="09-footer/footer.css" />
-		<link rel="stylesheet" href="10-chatbot/chatbot.css" /> -->
+		<link rel="stylesheet" href="09-footer/footer.css" />-->
+		<link rel="stylesheet" href="10 chatbot/chatbot.css" />
 		<!-- Remix icon -->
 		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet" />
 	</head>
@@ -104,9 +104,22 @@
 		</footer>
 
 		<!-- Chatbot -->
-		<div id="chatbot">
-			<!-- Conteúdo do chatbot -->
+		<button id="chat-toggle">💬</button>
+
+		<div class="chatbot" id="chatbot">
+			<div class="chatbot-header">
+				<span>Liberdade 🗽</span>
+				<button id="close-chat">✕</button>
+			</div>
+
+			<div class="chatbot-messages" id="messages"></div>
+
+			<div class="chatbot-input">
+				<input type="text" id="user-input" placeholder="Digite aqui..." disabled />
+				<button id="send-btn" disabled>Enviar</button>
+			</div>
 		</div>
+		<!-- / Chatbot -->
 
 		<!-- JS de cada seção de vcs(se necessário) -->
 		<script src="02 banner/banner.js"></script>
@@ -118,7 +131,7 @@
 		<script src="06-descontos-imperdiveis/descontos-imperdiveis.js"></script>
 		<script src="07-recomendados/recomendados.js"></script>
 		<script src="08-nao-perca-vista/nao-perca-vista.js"></script>
-		<script src="09-footer/footer.js"></script>
-		<script src="10-chatbot/chatbot.js"></script> -->
+		<script src="09-footer/footer.js"></script> -->
+		<script src="10 chatbot/chatbot.js"></script>
 	</body>
 </html>
