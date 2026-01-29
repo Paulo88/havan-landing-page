@@ -1,15 +1,29 @@
-#banner-oferta{
-    max-width: 1320px;
-    margin: 0 auto;
-    margin-top: 20px;
+#banner-oferta {
+  max-width: 1320px;
+  margin: auto;
+
 }
 
-#banner-oferta-conteiner{
-    display: flex;
-    gap: 8px;
-    justify-content: center;  
+#banner-oferta-conteiner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* sempre 3 */
+  gap: 20px;
 }
-  
-.banner-oferta-img img{
-    width: 433px;
+
+/* Mobile */
+@media (max-width: 640px) {
+  #banner-oferta-conteiner {
+    grid-template-columns: 1fr; /* só no mobile */
+  }
+}
+
+/* CARD / BANNER */
+.banner-oferta-img {
+  width: 100%;
+}
+
+.banner-oferta-img img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
