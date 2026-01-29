@@ -1,0 +1,189 @@
+
+.oferta-conteiner {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+}
+
+.oferta-home {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+}
+
+/* Desktop médio */
+@media (max-width: 1200px) {
+  .oferta-home {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .oferta-home {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .oferta-home {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+.oferta-conteudo{
+    max-width: 1320px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.oferta-titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgb(57, 57, 197);
+}
+
+.oferta-conteiner div {
+    border: 1px solid rgb(133, 180, 254);
+    padding: 7px;
+    border-radius: 15px;
+    position: relative;
+}
+
+
+.oferta-img {
+   width: 100%;
+   max-height: 170px;
+   object-fit: contain;
+   display: block;
+}
+
+.oferta-desconto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    margin: 14px;
+    font-size: 12px;
+    background-color: rgb(203, 224, 204);
+    color: rgb(24, 169, 16);
+    padding: 4px 11px;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+
+#oferta-botao{
+    border: 1px solid rgb(57, 57, 197);
+    border-radius: 8px;
+    width: 320px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 22px;
+    color: rgb(57, 57, 197);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.oferta-card-titulo{
+    margin: 0;
+    color: rgb(95, 95, 95);
+    font-size: 12.3px;
+}
+
+.oferta-avaliacao{
+    font-size: 13px;
+}
+
+
+.oferta-preco-antigo{
+    text-decoration: line-through;
+    margin: 0;
+    color:rgb(95, 95, 95);
+    font-size: 13px;
+}
+
+.oferta-preco-novo{
+    font-size: 1.7em;
+    margin: 0;
+    color: black;
+}
+
+.oferta-preco-parcelado{
+    margin: 0;
+    color: rgb(95, 95, 95);
+    font-size: 0.9em;
+}
+
+/* ===== MODAL HAVAN ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-havan {
+  background: #fff;
+  width: 95%;
+  max-width: 1320px;
+  height: 90vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.modal-header {
+  padding-left: 20px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.modal-header h2 {
+  font-size: 18px;
+  color: rgb(57, 57, 197);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  color: blue;
+  font-size: 34px;
+  cursor: pointer;
+  padding-right: 20px;
+  font-family:sans-serif;
+}
+
+/* Body com scroll */
+.modal-body {
+  padding: 0px 20px;
+  overflow-y: auto;
+}
+
+.oferta-modal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+/* SOMENTE NO MOBILE trava em 2 colunas */
+@media (max-width: 600px) {
+  .oferta-modal {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
