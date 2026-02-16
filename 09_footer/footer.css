@@ -1,0 +1,635 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url(../fonts/Nunito/Nunito-ExtraLight.woff2) format('woff2'), url(../fonts/Nunito/Nunito-ExtraLight.woff) format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.footer {
+    background-color: #E8F1FF;
+    color: #06357A;
+    font-family: 'Nunito', Arial, sans-serif;
+    margin-top: 50px;
+}
+
+
+.footer-main {
+    padding: 20px 10px;
+    max-width: none;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.footer-container {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+
+.footer-title {
+    font-size: 29px;    
+    color: #06357A;
+    margin-bottom: 25px;
+    line-height: 1.4;
+    text-align: left;
+}
+
+
+.footer-main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer-services {
+    margin-bottom: 30px;
+}
+
+.services-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    overflow-x: auto;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.service-link {
+    display: flex;
+    gap: 25px;     
+    text-decoration: none;
+    color: #06357A;
+    padding: 10px 12px;    
+    border-radius: 10px;
+    border: 1px solid #B5D5FF;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    flex-shrink: 0;
+    min-width: 80px;
+}
+
+.service-link:hover {
+    background-color: #B5D5FF;
+    transform: translateY(-3px);
+}
+
+.service-icon {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #06357A;
+    display: flex;
+    
+    
+}
+
+.service-icon i {
+    font-size: 24px;
+    color: #06357A;
+}
+
+.service-text {
+    font-size: 20px;
+    line-height: 1.3;
+    color: #06357A;
+}
+
+.service-text strong {
+    display: block;
+    font-weight: 600;
+    color: #06357A;
+}
+
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.links-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 15px;
+    max-width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.footer-links:first-of-type .links-list {
+    max-width: 600px;
+}
+
+.footer-links-secondary .links-list {
+    gap: 8px 20px;
+    max-width: 100%;
+    margin-top: 5px;
+}
+
+.links-list a {
+    text-decoration: none;
+    color: #06357A;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.links-list a:hover {
+    color: #042A5F;
+    text-decoration: underline;
+}
+
+.footer-links-secondary .links-list {
+    gap: 10px 20px;
+}
+
+
+.footer-app {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+}
+
+.footer-app-title {
+    font-size: 29px;   
+    color: #06357A;
+    margin-bottom: 5px;
+}
+
+.footer-app-subtitle {
+    font-size: 21px;
+    color: #06357A;
+    margin-bottom: 20px;
+}
+
+
+.app-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+   
+}
+
+.qr-code {
+    flex-shrink: 0;
+}
+
+.qr-code img {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+.download-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: auto;
+}
+
+.download-card {
+    background-color: #CEE2FF;
+    border: 1px solid #B5D5FF;
+    border-radius: 8px;
+    padding: 20px 40px;
+    display: flex;  
+    gap: 15px;
+    width: 100%;
+    max-width: 180px;
+    min-width: 150px;
+}
+
+.download-label {
+    font-size: 15px;    
+    color: #06357A;
+    letter-spacing: 1px;
+    
+}
+
+.app-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.app-button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    text-decoration: none;
+    font-size: 28px;
+    transition: all 0.3s ease;    
+    color: #06357A;
+}
+
+.app-button:hover {
+    background-color: #06357A;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+.social-media {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.social-list {
+    list-style: none;
+    display: flex;    
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.social-list a {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #CEE2FF;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 34px;
+    transition: all 0.3s ease;    
+    color: #06357A;
+}
+
+.social-list a:hover {
+    background-color: #06357A;
+    color: white;
+    transform: scale(1.1);
+}
+
+.footer-policies {
+    width: 85%;
+}
+.policies-nav {
+    max-width: 1600px;
+    margin: 0 auto;
+    
+}
+
+.policies-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.policies-list li {
+    border-right: 1px solid #B5D5FF;
+    padding: 0 15px;
+}
+
+.policies-list li:last-child {
+    border-right: none;
+}
+
+.policies-list a {
+    text-decoration: none;
+    color: #06357A;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.policies-list a:hover {
+    color: #042A5F;
+    text-decoration: underline;
+}
+
+
+.footer-copyright {
+    padding: 10px 10px;
+    background-color: #E8F1FF;
+    width: 85%;
+   
+}
+
+.footer-copyright p {
+    font-size: 18px;
+    color: #06357A;
+    margin: 0;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+@media (max-width: 968px) {
+
+  
+  .footer-container{
+    width: 92%;
+    margin: 0;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 320px);
+    gap: 24px;
+    align-items: start;
+  }
+
+  
+  .footer-title{
+    font-size: 24px;
+    line-height: 1.25;
+    margin-bottom: 18px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+ 
+  .services-list{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 12px;
+    padding-bottom: 6px;
+  }
+
+  .service-link{
+    padding: 10px 12px;
+    gap: 12px;
+    min-width: 200px;    
+    white-space: normal;
+  }
+
+  .service-text{
+    font-size: 14px;
+    line-height: 1.15;
+  }
+
+  .service-icon i{
+    font-size: 20px;
+  }
+
+  
+  .links-list{
+    gap: 6px 12px;
+    justify-content: flex-start;
+  }
+
+  .links-list a{
+    font-size: 14px;
+  }
+
+  
+  .footer-app{
+    margin-left: 0;       
+    align-items: flex-start;
+  }
+
+  .footer-app-title{ font-size: 22px; }
+  .footer-app-subtitle{ font-size: 16px; margin-bottom: 12px; }
+
+  .app-content{
+    flex-wrap: nowrap;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .qr-code img{
+    width: 120px;
+    height: 120px;
+  }
+
+  .download-card{
+    width: auto;
+    max-width: 210px;
+    min-width: 170px;
+    padding: 14px 18px;
+  }
+
+  
+  .footer-policies,
+  .footer-copyright{
+    width: 100%;
+  }
+
+  .policies-list{
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .policies-list li{
+    border-right: 1px solid #B5D5FF;
+    border-bottom: none;
+    padding: 0 12px;
+  }
+
+  .policies-list li:last-child{
+    border-right: none;
+  }
+
+  .policies-list a{
+    font-size: 14px;
+  }
+
+  .footer-copyright p{
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .footer-main {
+    max-width: none;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .footer-container{
+    padding: 0 20px;      
+    width: 100%;     
+    max-width: none;
+    margin: 0;
+    grid-template-columns: 1fr;
+    gap: 30px;       
+  }
+
+  .footer-title {
+    font-size: 20px;
+    margin-bottom: 18px;
+    text-align: left;
+    line-height: 1.3;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+
+  .services-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding-bottom: 0;
+    overflow-x: visible;
+  }
+
+  .service-link{
+    width: 100%;
+    min-width: 0;       
+    box-sizing: border-box;
+    padding: 12px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .service-icon i {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .service-text {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .services-list li:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .services-list > :last-child .service-link {
+    justify-content: center;   
+    align-items: center;       
+    text-align: center;
+    gap: 10px;
+  }
+
+  
+  .links-list {
+    justify-content: center;
+    gap: 8px 12px;
+    text-align: center;
+  }
+
+  .links-list a {
+    font-size: 13px;
+  }
+
+  
+ 
+  .qr-code {
+    display: none;
+  }
+
+  .footer-app{
+    margin-left: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-app-title{
+    font-size: 18px;      
+    line-height: 1.2;
+    margin: 0 0 8px 0;
+  }
+
+  .footer-app-subtitle{
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+  }
+
+  .app-content{
+    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  
+  .download-card{
+    width: auto;
+    max-width: 170px;    
+    min-width: 150px;
+    padding: 10px 14px;   
+    gap: 10px;
+  }
+
+  .download-label{
+    font-size: 10px;
+    line-height: 1.1;
+  }
+  .app-button {
+    width: 34px;
+    height: 34px;
+    font-size: 20px;
+  }
+
+  
+  .social-media {
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .social-list {
+    gap: 18px;
+  }
+
+  .social-list a {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+  }
+
+  
+  .footer-policies,
+  .footer-copyright {
+    width: 100%;
+  }
+
+  .policies-nav {
+    padding: 0 20px;
+  }
+
+  .policies-list {
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .policies-list li {
+    border-right: none;
+    border-bottom: none;
+    padding: 8px 0;
+  }
+
+  .policies-list a {
+    font-size: 14px;
+  }
+
+  .footer-copyright p {
+    font-size: 13px;
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+
+
